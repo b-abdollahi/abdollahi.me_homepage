@@ -1,0 +1,103 @@
+body, input, select, textarea {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15pt;
+    font-weight: 300 !important;
+    letter-spacing: -0.025em;
+    line-height: 1.75em;
+    color: #f5ffff;
+    line-height: 250%;
+}
+
+.container {
+    width:100%;
+    overflow: hidden;
+}
+
+.left {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #d72a0f;
+    width: 50%;
+    float: left;
+}
+
+.right {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #e39f1b;
+    width: 50%;
+    float: right;
+}
+
+.title {
+    margin: 40% auto;
+    text-align: center;
+    width: 50%;
+    /*height: 50%;*/
+    /*top: 25%;*/
+    /*position: relative;*/
+    /*background:orange;*/
+    /*transform: translateY(-50%);*/
+
+    /*display: -webkit-box;*/
+    /*display: -webkit-flex;*/
+    /*display: -moz-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: flex;*/
+    /*-webkit-flex-align: center;*/
+    /*-ms-flex-align: center;*/
+    /*-webkit-align-items: center;*/
+    /*align-items: center;*/
+}
+span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+a {
+    text-decoration: none;
+    color: #f5ffff;
+
+}
+
+
+@media all and (max-width:800px)
+{
+    .left, .right
+    {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+
+    .left {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #d72a0f;
+        width: 100%;
+        height: 50%;
+    }
+
+    .right {
+        top: 50%;
+        bottom: 0;
+        right: 0;
+        background-color: #e39f1b;
+        width: 100%;
+        height: 50%;
+
+    }
+
+    .title {
+        margin-top: 15%;
+        text-align: center;
+        color: white;
+    }
+}
