@@ -9,8 +9,6 @@ body, input, select, textarea {
 }
 
 .container {
-    width:100%;
-    overflow: hidden;
 }
 
 .left {
@@ -35,38 +33,22 @@ body, input, select, textarea {
 }
 
 .title {
-    margin: 40% auto;
-    text-align: center;
     width: 50%;
-    /*height: 50%;*/
-    /*top: 25%;*/
-    /*position: relative;*/
-    /*background:orange;*/
-    /*transform: translateY(-50%);*/
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 
-    /*display: -webkit-box;*/
-    /*display: -webkit-flex;*/
-    /*display: -moz-box;*/
-    /*display: -ms-flexbox;*/
-    /*display: flex;*/
-    /*-webkit-flex-align: center;*/
-    /*-ms-flex-align: center;*/
-    /*-webkit-align-items: center;*/
-    /*align-items: center;*/
-}
-span {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
-}
 a {
     text-decoration: none;
     color: #f5ffff;
-
 }
 
 
-@media all and (max-width:800px)
+@media all and (max-width:800px) and (orientation:portrait)
 {
     .left, .right
     {
@@ -78,8 +60,6 @@ a {
     .left {
         top: 0;
         bottom: 0;
-        left: 0;
-        right: 0;
         background-color: #d72a0f;
         width: 100%;
         height: 50%;
@@ -88,7 +68,6 @@ a {
     .right {
         top: 50%;
         bottom: 0;
-        right: 0;
         background-color: #e39f1b;
         width: 100%;
         height: 50%;
@@ -96,8 +75,13 @@ a {
     }
 
     .title {
-        margin-top: 15%;
+        margin: auto;
         text-align: center;
-        color: white;
+        position: relative;
+        top: 45%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
     }
+
 }
